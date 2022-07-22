@@ -1,0 +1,30 @@
+{
+  "name": "chrome-vuln-scanner",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src/index.js -d dist",
+    "dev": "nodemon --watch src --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "chrome-vuln-scanner": "dist/index.js"
+  },
+  "type": "module",
+  "author": "Sergey M <yamldeveloper@proton.me>",
+  "license": "None",
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/node": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "commander": "^9.4.0",
+    "puppeteer-core": "^15.5.0"
+  }
+}
